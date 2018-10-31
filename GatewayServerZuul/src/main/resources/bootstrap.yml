@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: EmployeeAPIGateway
+  h2:
+    console:
+      enabled: true  
+  datasource:
+     url : jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+     driverClassName : org.h2.Driver
+     username: sa
+     password: 
+  jpa:
+    database-platform:  org.hibernate.dialect.H2Dialect 
+    
+    
+eureka:
+  client:
+     serviceUrl:
+         defaultZone : http://localhost:8761/eureka/    
+              
+server:
+  port : 8093
+
+security:
+   basic:
+      enable : false   
+
+zuul:
+  routes:
+    employeeUI:
+      path: /employeeUI/**
+      serviceId : employee-microservice-dataset
+    ticketUI:
+      path: /ticketUI/**
+      serviceId : ticket-microservice-dataset  
+  host:
+     socket-timeout-millis : 30000
+ 
+jwt:
+  header: Authorization
+  secret: mySecret
+  expiration: 50000
+  route:
+    authentication:
+      path: /auth
+      refresh: /refresh
+
+    

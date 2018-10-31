@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-server-client
+  profiles:
+    active: development      
+  cloud:
+    config:
+       server:
+        git:
+          uri: file:///E:/workspace/config_file  # https://github.com/iamtech/ConfigurationService/tree/master/config_file # file:///E/workspace/ConfigurationService/config_file
+ 
+
+eureka:
+  client: 
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+      
+server: 
+  port: 8094     
+  
+  
