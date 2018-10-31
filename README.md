@@ -38,3 +38,8 @@ PORT: 8099
 Custom Service that provides data on tickets/tasks.  
 PORT: 8098  
 [TicketSystemService Repo Link](https://github.com/iamtech/TicketSystemService)
+
+
+### Credentials to test role based access from Zuul Gateway server
+*admin:admin  
+user:userpass*
