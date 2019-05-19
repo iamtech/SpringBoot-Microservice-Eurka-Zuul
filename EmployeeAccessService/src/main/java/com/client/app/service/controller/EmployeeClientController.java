@@ -9,7 +9,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.client.app.service.repository.EmployeeRepositoryAccess;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
+import io.swagger.annotations.Api;
+
 @Controller
+@Api(tags={"EmployeeClient"})
 public class EmployeeClientController {
 	
 	@Autowired
