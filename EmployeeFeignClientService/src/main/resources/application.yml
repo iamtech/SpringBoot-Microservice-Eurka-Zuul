@@ -1,2 +1,13 @@
+spring:
+  application:
+    name: employee-service-feign-client
+
 server: 
-  port: 8005
+  port: 8005      
+
+    
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
