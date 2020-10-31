@@ -34,6 +34,11 @@ Custom Service that calls EmployeeProducerService (testing purpose).
 PORT: 8099  
 [EmployeeAccessService Repo Link](https://github.com/iamtech/EmployeeAccessService)
 
+## EmployeeFeignClientService
+Service that calls EmployeeProducerService using OpenFeign (testing purpose).  
+PORT: 8005  
+[EmployeeFeignClientService Repo Link](https://github.com/iamtech/SpringBoot-Microservice-Eurka-Zuul/tree/master/EmployeeFeignClientService)
+
 ## TicketSystemService
 Custom Service that provides data on tickets/tasks.  
 PORT: 8098  
