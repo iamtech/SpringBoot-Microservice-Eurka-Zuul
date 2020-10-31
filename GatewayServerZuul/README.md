@@ -25,3 +25,18 @@ Example:
              with header
              
              Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU0MTA1NTY1MiwiaWF0IjoxNTQwNDUwODUyfQ.2QCp1ZNXAokmLRl5-UdRw9mr3vqdBPZwLnoBv87OeGT9fqMhtYZTbtAiHITq-yWjCdC-XNwEEJ_Aq-vG_9u3kg
+
+
+
+### Custom Actuator End Point
+`GET request to http://localhost:8093/actuator/info
+This will produce:
+{
+    "app": {
+        "name": "Gateway Application Version 1.0",
+        "java": {
+            "version": 1.8
+        },
+        "type": "ZULL Gateway in Spring Boot"
+    }
+}
