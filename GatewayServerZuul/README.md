@@ -29,8 +29,10 @@ Example:
 
 
 ### Custom Actuator End Point
-`GET request to http://localhost:8093/actuator/info
+`GET request to http://localhost:8093/actuator/info`
+
 This will produce:
+```
 {
     "app": {
         "name": "Gateway Application Version 1.0",
@@ -40,3 +42,4 @@ This will produce:
         "type": "ZULL Gateway in Spring Boot"
     }
 }
+```
