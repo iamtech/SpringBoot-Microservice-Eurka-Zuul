@@ -44,5 +44,11 @@ jwt:
     authentication:
       path: /auth
       refresh: /refresh
-
+      
+info:
+  app:
+    name: Gateway Application Version 1.0
+    java:
+      version: 1.8
+    type: ZULL Gateway in Spring Boot
     

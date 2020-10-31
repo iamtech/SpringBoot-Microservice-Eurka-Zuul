@@ -83,6 +83,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .antMatchers("/h2-console/**/**").permitAll()
 
             .antMatchers("/auth/**").permitAll()
+            
+            //Allow Actuator EndPoints
+            .antMatchers("/actuator/**").permitAll()
             // Only for ADMIN scope User
             .antMatchers("/employeeUI/**").hasRole("ADMIN")
             .anyRequest().authenticated();
@@ -124,6 +127,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
             .and()
             .ignoring()
             .antMatchers("/h2-console/**/**");
+          
     }
     
   /*  @Bean
