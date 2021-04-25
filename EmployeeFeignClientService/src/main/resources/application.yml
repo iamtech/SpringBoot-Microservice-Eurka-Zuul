@@ -11,3 +11,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+
+# Must have Hystrix on the classpath and also set feign.hystrix.enabled=true to have Feign automatically wrap methods in Hystrix commands.      
+feign:
+  hystrix:
+    enabled: true
