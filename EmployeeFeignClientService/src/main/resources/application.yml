@@ -17,3 +17,10 @@ eureka:
 feign:
   hystrix:
     enabled: true
+    
+# To exposes the /actuator/hystrix.stream as a management endpoint for Hystrix Service for monitoring
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
