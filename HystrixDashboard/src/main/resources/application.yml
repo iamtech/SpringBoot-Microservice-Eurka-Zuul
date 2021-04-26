@@ -10,3 +10,9 @@ eureka:
       
 server: 
   port: 8092 
+ 
+#configure a list of hosts to allow connections to
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: "*"
+  
