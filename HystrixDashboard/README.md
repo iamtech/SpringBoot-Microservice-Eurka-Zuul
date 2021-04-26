@@ -9,6 +9,6 @@
 
 
 
-   Use postman/browser and make a post request to:
+   Use postman/browser and make a request to:
 
   http://localhost:8005/employees/
