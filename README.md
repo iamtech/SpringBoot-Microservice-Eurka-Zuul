@@ -20,7 +20,7 @@ PORT: 8094
 [ConfigurationService Repo Link](https://github.com/iamtech/ConfigurationService)
 
 ## HystrixDashboard
-Provide alternate methods in case of cuircuit break.  
+Provides Hystrix Dashboard to monitor services with alternate methods in case of cuircuit break.  
 PORT: 8092  
 [HystrixDashboard Repo Link](https://github.com/iamtech/HystrixDashboardServer)
 
